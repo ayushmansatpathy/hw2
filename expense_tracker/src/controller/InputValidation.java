@@ -1,47 +1,39 @@
 package controller;
 
-import java.util.Arrays;
+import java.util.Set;
 
-public class InputValidation {
+public final class InputValidation {
 
-  public static boolean isValidAmount(double amount) {
-    
-    // Check range
-    if(amount >1000) {
-      return false;
-    }
-    if (amount < 0){
-      return false;
-    }
-    if (amount == 0){
-      return false;
-    }
-    return true;
+  private static final Set<String> ALLOWED_CATEGORIES = Set.of("food", "travel", "bills", "entertainment", "other");
+
+  private InputValidation() {
   }
 
-  public static boolean isValidCategory(String category) {
-
-    if(category == null) {
-      return false; 
+  public static double requireValidAmount(String amountText) {
+    if (amountText == null || amountText.trim().isEmpty()) {
+      throw new IllegalArgumentException("Amount required.");
     }
-  
-    if(category.trim().isEmpty()) {
-      return false;
+    double val;
+    try {
+      val = Double.parseDouble(amountText.trim());
+    } catch (NumberFormatException nfe) {
+      throw new IllegalArgumentException("Amount must be a Double.");
     }
-
-    if(!category.matches("[a-zA-Z]+")) {
-      return false;
+    if (val <= 0 || val >= 1000) {
+      throw new IllegalArgumentException("Amount must be > 0 and < 1000.");
     }
-
-    String[] validWords = {"food", "travel", "bills", "entertainment", "other"};
-
-    if(!Arrays.asList(validWords).contains(category.toLowerCase())) {
-      // invalid word  
-      return false;
-    }
-  
-    return true;
-  
+    return val;
   }
 
+  public static String requireValidCategory(String categoryText) {
+    if (categoryText == null) {
+      throw new IllegalArgumentException("Category is required.");
+    }
+    String c = categoryText.trim().toLowerCase();
+    if (!ALLOWED_CATEGORIES.contains(c)) {
+      throw new IllegalArgumentException(
+          "Category must be one of: food, travel, bills, entertainment, other.");
+    }
+    return c;
+  }
 }
