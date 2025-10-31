@@ -1,0 +1,25 @@
+Export to CSV — Design Plan
+
+The goal of this feature is to let users export the list of transactions they
+currently see in the Expense Tracker into a CSV file. The exported file should
+start with column headers and include one line per transaction.
+
+In the interface, the user would get an extra text box or file chooser to enter
+a filename (for example, expenses.csv) and a new “Export CSV” button. When the
+button is clicked, the controller reads the filename, checks that it is valid,
+and then collects the transactions currently shown in the table (which might be
+filtered). The controller then calls a helper class named CsvExporter to write
+those transactions to the file. If the export succeeds, the view shows a short
+confirmation message; if it fails, the user sees a clear error message and can
+try again.
+
+The CsvExporter class would be responsible for writing the file. It would
+include a simple export method that writes headers followed by one line per
+transaction. The design follows the MVC structure and the open-closed principle,
+since new export formats could be added later without changing the controller.
+
+Common error cases include invalid filenames, permission problems, or an empty
+transaction list. The program should check for these early and display helpful
+messages. The design keeps the user interface simple, prevents errors
+through validation, and keeps each part of the system focused on a single
+responsibility.
