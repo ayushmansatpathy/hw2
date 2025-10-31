@@ -1,49 +1,52 @@
 package controller;
 
+import javax.swing.*;
+import model.Transaction;
 import view.ExpenseTrackerView;
-
 import java.util.List;
 
-
-
-import model.ExpenseTrackerModel;
-import model.Transaction;
 public class ExpenseTrackerController {
-  
-  private ExpenseTrackerModel model;
-  private ExpenseTrackerView view;
 
-  public ExpenseTrackerController(ExpenseTrackerModel model, ExpenseTrackerView view) {
-    this.model = model;
+  private final ExpenseTrackerView view;
+
+  public ExpenseTrackerController(ExpenseTrackerView view) {
     this.view = view;
 
-    // Set up view event handlers
+    this.view.setOnAddTransaction(e -> {
+      try {
+        double amount = InputValidation.requireValidAmount(view.getAmountText());
+        String category = InputValidation.requireValidCategory(view.getCategoryText());
+        Transaction t = new Transaction(amount, category);
+        view.addTransaction(t);
+      } catch (IllegalArgumentException ex) {
+        JOptionPane.showMessageDialog(view, ex.getMessage(), "Invalid input", JOptionPane.ERROR_MESSAGE);
+      }
+    });
+
+    this.view.setOnApplyFilter(e -> applyFilter());
   }
 
-  public void refresh() {
+  public void applyFilter() {
+    String selection = view.getSelectedFilter();
+    List<Transaction> all = view.getAllTransactions();
 
-    // Get transactions from model
-    List<Transaction> transactions = model.getTransactions();
-
-    // Pass to view
-    view.refreshTable(transactions);
-
-  }
-
-  public boolean addTransaction(double amount, String category) {
-    if (!InputValidation.isValidAmount(amount)) {
-      return false;
+    try {
+      List<Transaction> filtered;
+      switch (selection) {
+        case "Amount":
+          filtered = new AmountFilter(view.getFilterValueText()).filter(all);
+          break;
+        case "Category":
+          filtered = new CategoryFilter(view.getFilterValueText()).filter(all);
+          break;
+        case "None":
+        default:
+          filtered = all;
+          break;
+      }
+      view.showTransactions(filtered);
+    } catch (IllegalArgumentException ex) {
+      JOptionPane.showMessageDialog(view, ex.getMessage(), "Invalid filter input", JOptionPane.ERROR_MESSAGE);
     }
-    if (!InputValidation.isValidCategory(category)) {
-      return false;
-    }
-    
-    Transaction t = new Transaction(amount, category);
-    model.addTransaction(t);
-    view.getTableModel().addRow(new Object[]{t.getAmount(), t.getCategory(), t.getTimestamp()});
-    refresh();
-    return true;
   }
-  
-  // Other controller methods
 }
