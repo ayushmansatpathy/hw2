@@ -9,7 +9,7 @@ public class ExpenseTrackerModel {
   private List<Transaction> transactions;
 
   public ExpenseTrackerModel() {
-    transactions = new ArrayList<>(); 
+    transactions = new ArrayList<>();
   }
 
   public void addTransaction(Transaction t) {
@@ -21,8 +21,6 @@ public class ExpenseTrackerModel {
   }
 
   public List<Transaction> getTransactions() {
-    // Alternative 1: Apply the decorator design pattern (see below)
-    // Alternative 2: Return a copy of the list
     return Collections.unmodifiableList(transactions);
   }
 
