@@ -1,0 +1,177 @@
+commit 2fac006c49f295ce3ea47d66ca2c42cc6dcdb6b7
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:44:20 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:44:20 2025 -0400
+
+    added export.txt describing the export feature briefly
+
+commit 5afabae66e1df42782d8c7500d506ca52559b5b3
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:40:21 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:40:21 2025 -0400
+
+    added screenshot of test run
+
+commit 7cad3e647856fd1cab23cc2412245a97bd0bb7b8
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:39:41 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:39:41 2025 -0400
+
+    added jdoc
+
+commit 70fd9b7193509a2668dddbae8bc9f0472cc855a1
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:37:29 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:37:29 2025 -0400
+
+    made changes to README
+
+commit 04ad82028eb7fc223abb9409925e1ca91a6aa41e
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:28:05 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:28:05 2025 -0400
+
+    add 5 required cases in MVCTest
+
+commit 60adc5e809243f0d428907f8d11e4ecef7107a54
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:27:48 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:27:48 2025 -0400
+
+    removed unused import
+
+commit 14b1296a2f181ce186da628ad3be2d63723ac482
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:27:12 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:27:12 2025 -0400
+
+    made changes to input validation and transaction model
+
+commit cdd715ebcc7ea99a08e7b96042d058b5904e78f1
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:26:42 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:26:42 2025 -0400
+
+    changed expense tracker model for filtering totals
+
+commit 5026aa6b77363fd2634afef0cc9e96b4885e62cb
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:23:49 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:23:49 2025 -0400
+
+    made changes to expense tracker app by adding view and controller
+
+commit 20ef98307649dceb32f1dd87bd30dc63e50caf99
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:23:17 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:23:17 2025 -0400
+
+    add filter UI and apply button
+
+commit 52263a122f5f63c4831705cc256b23929b9a51cc
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:21:40 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:21:40 2025 -0400
+
+    made changes to expense tracker controller for adding and applyFilter
+
+commit 20c6b6483e3a08d1f20e34675ef3fd57d6922b64
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:15:30 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:15:30 2025 -0400
+
+    added category filter using same validation
+
+commit 07a9b00f4a50c09cf330c57a2649376a265dffd0
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:15:02 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:15:02 2025 -0400
+
+    added amount filter using hw1 validation
+
+commit c82e8aa7564cb97f0e1bed21da3d9ac11680e775
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 19:14:44 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 19:14:44 2025 -0400
+
+    added transaction filter
+
+commit 7e57cd6f24b44c88161e611bdd393b38cb0bc3b5
+Author:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+AuthorDate: Fri Oct 31 17:17:35 2025 -0400
+Commit:     Ayushman Satpathy <ayushmansatpathy1234@gmail.com>
+CommitDate: Fri Oct 31 17:17:35 2025 -0400
+
+    made changes to gitignore for javadoc
+
+commit a640f2a45c48b8c7432af50241c3ab9efcc49e1d
+Author:     Heather Conboy <hconboy@cs.umass.edu>
+AuthorDate: Wed Oct 22 14:40:05 2025 -0400
+Commit:     GitHub <noreply@github.com>
+CommitDate: Wed Oct 22 14:40:05 2025 -0400
+
+    Update README.md
+    
+    Fixed a typo in the Compile section of the README file.
+
+commit 5095c4adc397e50a68ff6368c2f4820553a2f836
+Author:     Heather Conboy <hconboy@cs.umass.edu>
+AuthorDate: Wed Oct 22 09:54:26 2025 -0400
+Commit:     Heather Conboy <hconboy@cs.umass.edu>
+CommitDate: Wed Oct 22 09:54:26 2025 -0400
+
+    Modified the Transaction class to be immutable. Modified the ExpenseTrackerModel class to encapsulate the list of transactions.
+
+commit b21da9fb7fd47c25881d7fc014a932365cb1552b
+Author:     Mahbuba Tasmin <tasmin153@gmail.com>
+AuthorDate: Sat Sep 2 02:42:57 2023 -0400
+Commit:     Mahbuba Tasmin <tasmin153@gmail.com>
+CommitDate: Sat Sep 2 02:42:57 2023 -0400
+
+    Build file update
+
+commit ccabaffc7ff1b7098979a63fcbadf48bc04915c3
+Author:     Mahbuba Tasmin <tasmin153@gmail.com>
+AuthorDate: Tue Aug 29 14:49:22 2023 -0400
+Commit:     Mahbuba Tasmin <tasmin153@gmail.com>
+CommitDate: Tue Aug 29 14:49:22 2023 -0400
+
+    File Update
+
+commit 2574c71001a74c29f01f4a84fa99f450158f2f10
+Author:     Mahbuba Tasmin <tasmin153@gmail.com>
+AuthorDate: Wed Aug 9 14:11:14 2023 -0400
+Commit:     Mahbuba Tasmin <tasmin153@gmail.com>
+CommitDate: Wed Aug 9 14:11:14 2023 -0400
+
+    Total Cost and Serial update
+
+commit d29d2c8acb4145ce700e0456ccc334da0cad3dc2
+Author:     Mahbuba Tasmin <tasmin153@gmail.com>
+AuthorDate: Wed Aug 9 12:54:46 2023 -0400
+Commit:     Mahbuba Tasmin <tasmin153@gmail.com>
+CommitDate: Wed Aug 9 12:54:46 2023 -0400
+
+    HW2 template files
+
+commit 6a51d8019c39a33d581ce078ae8887a022ee806d
+Author:     Mahbuba Tasmin <tasmin153@gmail.com>
+AuthorDate: Tue Aug 8 21:48:41 2023 -0400
+Commit:     GitHub <noreply@github.com>
+CommitDate: Tue Aug 8 21:48:41 2023 -0400
+
+    Initial commit
