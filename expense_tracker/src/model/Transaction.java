@@ -2,7 +2,6 @@ package model;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
 public class Transaction {
 
@@ -23,13 +22,13 @@ public class Transaction {
   public String getCategory() {
     return category;
   }
-  
+
   public String getTimestamp() {
     return timestamp;
   }
 
   private String generateTimestamp() {
-    SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm");  
+    SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm");
     return sdf.format(new Date());
   }
 
